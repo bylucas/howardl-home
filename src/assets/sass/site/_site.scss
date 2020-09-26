@@ -1,0 +1,34 @@
+// =======================
+// Site
+// =======================
+
+.wrapper,
+header,
+article,
+footer {
+    @include clearfix;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+		padding: $spacer 3%;
+		text-align: center;
+
+		img {
+			width: 20%;
+			margin-bottom: $spacer/3;
+		}
+
+		h1 {
+			font-size: 2rem;
+			margin-bottom: $spacer/2;
+		}
+
+		button {
+			margin-bottom: $spacer/2;
+		}
+		.router-link-active {
+			color: red;
+		}
+}

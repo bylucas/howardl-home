@@ -1,0 +1,31 @@
+// =======================
+// Social Buttons
+// =======================
+    
+
+.social {
+    margin-bottom: $spacer;
+    margin-top: $spacer/2;
+
+    a {
+    	font-size: $third;
+    }
+
+	span {
+    margin-right: 1%;
+
+    &:before {
+  	font-family: $icon-font !important;//if using icon font
+}
+}
+svg {
+		@include size(1.2rem);//if using svg
+		fill: $error-color;
+	}
+}
+
+@include media(900) {
+	svg:hover {
+		fill: $success-color;
+	}
+}

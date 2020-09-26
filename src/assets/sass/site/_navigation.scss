@@ -1,0 +1,72 @@
+// =======================
+// Breadcrumbs
+// =======================
+  
+.breadcrumb-box {
+  margin-bottom: $spacer;
+  
+  p {
+  font-family: $alt-font;
+  font-size: $third;
+}
+}
+
+// =======================
+// Page Naviagtion
+// =======================
+
+.pagination {
+  margin: $spacer/2 auto $spacer auto;
+  width: 95%;
+  text-align: center;
+
+  ul {
+
+    li {
+      display: inline;
+      font-family: $alt-font;
+      font-size: $third;
+      font-weight: bold;
+
+        &:first-child a,
+        &:first-child span,
+        &:last-child a,
+        &:last-child span {
+          @include background();
+          border-radius: $radius;
+      }
+
+      a,
+      span {
+        padding: .4rem .6rem;
+        @include background();
+        border-radius: $radius;
+      }
+    }
+  }
+}
+
+// ==================================
+// Next/Previous Navigation
+// ==================================
+  
+.prev-next {
+  @include clearfix;
+}
+
+.prev-link,
+.next-link {
+  font-family: $alt-font;
+  font-size: $third;
+  @include background();
+  border-radius: $radius;
+  padding: .3rem .5rem;
+}
+
+.prev-link {
+  float: left;
+}
+
+.next-link {
+  float: right;
+}
