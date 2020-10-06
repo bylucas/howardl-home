@@ -29,9 +29,9 @@ $light-gray: #ddd;
 
 // Font Colors
 $font-color: $dark-gray;
-$link-color: #2365c0;//blue
-$hover-color: lighten($link-color, 25%);
-
+$link-color: #99db2e;//green
+$hover-color: lighten($link-color, 35%);
+$nav-color: $link-color;
 // Background Colors
 $background: $light-gray;
 $light-background: lighten($background, 11%);

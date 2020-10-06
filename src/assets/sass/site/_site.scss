@@ -3,17 +3,31 @@
 // =======================
 
 .wrapper,
+main,
 header,
 article,
 footer {
     @include clearfix;
 }
 
-.wrapper {
-	max-width: 900px;
-	margin: 0 auto;
-		padding: $spacer 3%;
-		text-align: center;
+.header {
+	text-align: center;
+	@include padding($spacer null);
+
+	img {
+		width: 20%;
+		margin-top: 12px;
+	}
+	h1 {
+		font-size: 1.5rem;
+		margin-top: 12px;
+	}
+}
+
+main {
+	max-width: 800px;
+	margin: $spacer*1.5 auto $spacer*2 auto;
+		padding: 0 3%;
 
 		img {
 			width: 20%;
@@ -28,7 +42,59 @@ footer {
 		button {
 			margin-bottom: $spacer/2;
 		}
-		.router-link-active {
-			color: red;
+		
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition-duration: 3.3s;
+	transition-property: height, opacity;
+	transition-timing-function: ease;
+	overflow: hidden;
+}
+
+.fade-enter,
+.fade-leave-active {
+	opacity: 0
+}
+
+footer {
+	background-color: $black;
+	text-align: center;
+	@include padding($spacer/2 null);
+	p {
+		font-size: $third;
+		margin-bottom: 0;
+		color: $white;
+	}
+}
+
+@include media(700) {
+	.header {
+
+		img {
+			width: 15%;
 		}
+
+		h1 {
+			font-size: 1.9rem;
+		}
+	}
+}
+
+@include media(900) {
+	.header {
+
+		img {
+			width: 12%;
+		}
+
+		h1 {
+			font-size: 2.2rem;
+		}
+	}
+
+	main {
+		padding: 0;
+	}
 }

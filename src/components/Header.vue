@@ -1,6 +1,6 @@
 <template>
 <header class="header">
-  <img alt="howardl logo" src="../assets/howardl-logo.png" />
+  <img alt="howardl logo" src="../assets/img/howardl-logo.png" />
   <h1>{{ msg }}</h1>
   </header>
 </template>
@@ -10,7 +10,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      msg: 'howardl..'
+      msg: 'Code Reference Notes'
     }
   }
 }

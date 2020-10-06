@@ -1,6 +1,10 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import Home from './views/Home.vue';
-import About from './views/About.vue';
+import Javascript from './views/Javascript.vue';
+import Php from './views/Php.vue';
+import Scss from './views/Scss.vue';
+import Terminal from './views/Terminal.vue';
+import Wordpress from './views/Wordpress.vue';
 
 const history = createWebHistory();
 
@@ -10,9 +14,25 @@ const routes = [
       component: Home
     },
     {
-      path: '/about',
-      component: About
-    }
+      path: '/javascript',
+      component: Javascript
+    },
+  {
+    path: '/php',
+    component: Php
+  },
+  {
+    path: '/scss',
+    component: Scss
+  },
+  {
+    path: '/terminal',
+    component: Terminal
+  },
+  {
+    path: '/wordpress',
+    component: Wordpress
+  }
   ];
 
   const router = createRouter({

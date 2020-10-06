@@ -1,3 +1,70 @@
 // =======================
 // Menu
 // =======================
+
+.nav-wrap {
+background-color: $black;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+
+  .center {
+    overflow: hidden;
+    white-space: nowrap;
+
+  }
+    
+
+    .internal {
+      font-size: .9rem;
+      letter-spacing: 2px;
+      display: inline-block;
+      @include padding(19px 10px);
+
+      a {
+        color: $white;
+        transition: border 0.1s ease-in 0.1s;
+        
+
+        &:hover {
+          color: $nav-color;
+border-bottom: 6px solid $nav-color;
+padding-bottom: 15px;
+        }
+      }    
+    
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 19px 0;
+    width: 25px;
+    border-radius: 0;
+    margin: 0;
+  }
+  .router-link-active {
+    color:$nav-color;
+    border-bottom: 6px solid $nav-color;
+    padding-bottom: 15px;
+  }
+}
+
+@include media(600) {
+  nav button {
+    @include hide-visually;
+  }
+}
+
+@include media(700) {
+  nav .internal {
+    font-size: 1.1rem;
+    @include padding(19px 13px);
+  }
+}
