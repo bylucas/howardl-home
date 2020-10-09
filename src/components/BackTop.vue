@@ -34,11 +34,11 @@ export default  {
     },
     right: {
       type: String,
-      default: '20px',
+      default: '5px',
     },
     bottom: {
       type: String,
-      default: '10px',
+      default: '60px',
     },
     scrollFn: {
       type: Function,

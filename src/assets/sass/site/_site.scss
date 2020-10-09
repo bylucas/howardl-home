@@ -13,6 +13,8 @@ footer {
 .header {
 	text-align: center;
 	@include padding($spacer null);
+	max-width: 900px;
+	margin: 0 auto;
 
 	img {
 		width: 20%;
@@ -43,19 +45,6 @@ main {
 			margin-bottom: $spacer/2;
 		}
 		
-}
-
-.fade-enter-active,
-.fade-leave-active {
-	transition-duration: 3.3s;
-	transition-property: height, opacity;
-	transition-timing-function: ease;
-	overflow: hidden;
-}
-
-.fade-enter,
-.fade-leave-active {
-	opacity: 0
 }
 
 footer {

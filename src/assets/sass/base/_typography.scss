@@ -52,13 +52,12 @@ code,
 kbd,
 samp {
   font-family: $code-font;
-  font-size: $secondary;
-  line-height: 1.4;
+  font-size: $third;
+  line-height: 1.5;
 }
 
 //give the elements bottom margin
 p,
-pre,
 address,
 blockquote,
 ul,

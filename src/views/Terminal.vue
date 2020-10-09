@@ -4,7 +4,7 @@
   loading-image="src/assets/img/loading.gif"
   error-image="src/assets/img/error.jpg"
   image-class="cam-viewport"
-  background-size="cover"
+  background-size=""
   :title="title"  />
   <main>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, cumque. Totam molestiae incidunt velit repellat natus adipisci libero sapiente recusandae, dolorum necessitatibus maiores quo doloribus fugiat nihil sunt deserunt et!</p>
@@ -17,7 +17,7 @@ import lazyBackground from '../components/lazyBackground.vue'
 export default {
   data() {
     return {
-      backgroundImage: 'https://howardl.co.uk/uploads/india/delhi-header.jpg',
+      backgroundImage: 'src/assets/img/loading.gif',
       title: 'This is the Termonal page'
     }
   },

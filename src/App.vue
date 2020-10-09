@@ -37,16 +37,32 @@ export default {
 .cam-viewport {
   height: 180px;
   display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .title {
   color: rgb(245, 238, 238);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
   line-height: 1.2;
+}
+
+@media screen and (min-width: 700px) {
+  .title {
+  font-size: 2.2rem;
+}
+}
+
+@media screen and (min-width: 900px) {
+  .title {
+  font-size: 2.5rem;
+}
 }
 </style>

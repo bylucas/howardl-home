@@ -10,7 +10,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      msg: 'Code Reference Notes'
+      msg: 'Code Quick Reference Notes'
     }
   }
 }

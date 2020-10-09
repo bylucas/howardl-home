@@ -51,7 +51,7 @@ export default {
           "now" in window.performance
             ? performance.now()
             : new Date().getTime();
-        
+           
         function scroll(timestamp) {
           //Calculate the timeelapsed
           const timeElapsed = timestamp - startTime;
@@ -64,7 +64,7 @@ export default {
             //Request for animation
             window.requestAnimationFrame(scroll);
           } else {
-            return;
+            return;  
           }
         }
         //Call requestAnimationFrame on scroll function first time
@@ -74,10 +74,14 @@ export default {
     swipeLeft() {
       const content = this.$refs.content;
       this.scrollTo(content, -300, 800);
+      document.querySelector('#left-button').style.display = "none";
+      document.querySelector('#right-button').style.display = "block";
     },
     swipeRight() {
       const content = this.$refs.content;
       this.scrollTo(content, 300, 800);
+      document.querySelector('#right-button').style.display = "none";
+      document.querySelector('#left-button').style.display = "block";
     }
   }
 };

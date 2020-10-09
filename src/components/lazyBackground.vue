@@ -41,7 +41,7 @@ export default {
     backgroundSize: {
       type: String,
       required: false,
-      default: 'cover'
+      default: 'contain'
     }
   },
   data() {
