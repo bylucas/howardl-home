@@ -4,13 +4,55 @@
     text-align: center;
   }
 
+  h3 {
+    font-size: 1.2rem;
+    @include margin($spacer null $spacer/3 null);
+    font-weight: 300;
+  }
+
   p {
     font-size: $secondary;
-    text-align: center;
+    margin-bottom: $spacer/2;
   }
 
   hr {
-  margin: $spacer*1.5 0;
+  margin: $spacer 0;
+  }
+
+  blockquote {
+    padding-left: $spacer/3;
+    border-left: 4px solid $nav-color;
+    @include margin($spacer null);
+
+    p {
+      font-size: $lead;
+      font-style: italic;
+      color: $light-gray;
+    }
+  }
+
+  code {
+    //margin-left: 10px;
+    background: $light-background;
+    color: $background;
+    padding: 6px;
+    border-radius: $radius;
+    border: 1px solid tint($background,40%);
+    font-size: $third/1.08;
+  }
+
+  pre {
+    background: $light-background;
+    border-radius: $radius;
+    border: 2px solid tint($background,40%);
+    padding: 8px;
+  }
+
+  pre code {
+    background: none;
+    border-radius: 0;
+    border: none;
+    padding: 0;
   }
 }
 
@@ -30,41 +72,59 @@
 @include media(700) {
 
   .post-content {
-    h2 {
-      font-size: 1.8rem;
-    }
+  //   h2 {
+  //     font-size: 1.8rem;
+  //   }
 
-    p {
-      font-size: $font-size;
-    }
-     hr {
-       margin: $spacer*1.5 20px;
-     }
+  //   p {
+  //     font-size: $font-size;
+  //   }
+  //    hr {
+  //      margin: $spacer*1.5 20px;
+  //    }
+  // }
+
+  // .links {
+  // flex-direction: row;
+  // justify-content: space-evenly;
+  // align-items: flex-start;
+  // }
+
+  code {
+    padding: 8px;
   }
 
-  .links {
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  pre {
+    padding: 10px;
   }
+}
 }
 
 @include media(900) {
 
   .post-content {
-    h2 {
-      font-size: 2rem;
-    }
+  //   h2 {
+  //     font-size: 2rem;
+  //   }
 
-    p {
-      font-size: $font-size*1.08;
-    }
+  //   p {
+  //     font-size: $font-size*1.08;
+  //   }
+  // }
+
+  // .links a {
+  //   font-size: $secondary*1.08;
+  //   margin-bottom: 5px;
+   //}
+
+   code {
+    padding: 8px 10px;
   }
 
-  .links a {
-    font-size: $secondary*1.08;
-    margin-bottom: 5px;
+  pre {
+    padding: 10px 12px;
   }
+}
 }
 
 
