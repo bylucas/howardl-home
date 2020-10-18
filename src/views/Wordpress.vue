@@ -1,8 +1,8 @@
 <template>
   <lazyBackground
   :image-source="backgroundImage"
-  loading-image="src/assets/img/loading.gif"
-  error-image="src/assets/img/error.jpg"
+  loading-image="/loading2.gif"
+  error-image="/error.jpg"
   image-class="cam-viewport"
   background-size=""
   :title="title" />

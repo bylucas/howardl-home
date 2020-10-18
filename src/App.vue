@@ -30,12 +30,12 @@ export default {
 
 <style>
 .loaded {
-  height: 180px;
+  height: 200px;
   width: 100%;
 }
 
 .cam-viewport {
-  height: 180px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -48,7 +48,7 @@ export default {
 }
 
 .title {
-  color: rgb(245, 238, 238);
+  color: #fff;
   font-size: 1.8rem;
   text-align: center;
   line-height: 1.2;

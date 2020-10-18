@@ -1,8 +1,8 @@
 <template>
   <lazyBackground
   :image-source="backgroundImage"
-  loading-image="src/assets/img/loading.gif"
-  error-image="src/assets/img/error.jpg"
+  loading-image="/img/loading2.gif"
+  error-image="/img/error.jpg"
   image-class="cam-viewport"
   background-size=""
   :title="title"  />
@@ -17,7 +17,7 @@ import lazyBackground from '../components/lazyBackground.vue'
 export default {
   data() {
     return {
-      backgroundImage: 'src/assets/img/loading.gif',
+      backgroundImage: '/loading2.gif',
       title: 'This is the Termonal page'
     }
   },

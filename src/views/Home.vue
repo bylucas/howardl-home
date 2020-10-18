@@ -1,8 +1,8 @@
 <template>
 <lazyBackground
   :image-source="backgroundImage"
-  loading-image="src/assets/img/loading.gif"
-  error-image="src/assets/img/error.jpg"
+  loading-image="/loading2.gif"
+  error-image="/error.jpg"
   image-class="cam-viewport"
   background-size=""
   :title="title" />
@@ -21,7 +21,7 @@ import lazyBackground from '../components/lazyBackground.vue'
 export default {
   data() {
     return {
-      backgroundImage: 'https://howardl.co.uk/uploads/india/delhi-header.jpg',
+      backgroundImage: 'https://howardl.co.uk/uploads/code-reference/js-notes.jpg',
       title: 'This is the home page'
     }
   },

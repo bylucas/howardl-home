@@ -16,18 +16,21 @@
   }
 
   hr {
-  margin: $spacer 0;
+  margin: $spacer 10px;
+  border-bottom: 1px solid $post-color;
+  box-shadow: 0 1px 3px rgba(#000, .1);
+
   }
 
   blockquote {
     padding-left: $spacer/3;
-    border-left: 4px solid $nav-color;
+    border-left: 4px solid $post-color;
     @include margin($spacer null);
 
     p {
       font-size: $lead;
       font-style: italic;
-      color: $light-gray;
+      color: $post-color;
     }
   }
 
@@ -66,6 +69,7 @@
   a {
     display: block;
     font-size: $secondary;
+    color: $post-color;
   }
 }
 

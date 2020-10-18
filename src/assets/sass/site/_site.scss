@@ -16,9 +16,14 @@ footer {
 	max-width: 900px;
 	margin: 0 auto;
 
-	img {
+	svg {
 		width: 20%;
 		margin-top: 12px;
+		fill: $post-color;
+
+		&:hover {
+			fill: $post-color;
+		}
 	}
 	h1 {
 		font-size: 1.5rem;
@@ -61,7 +66,7 @@ footer {
 @include media(700) {
 	.header {
 
-		img {
+		svg {
 			width: 15%;
 		}
 
@@ -74,7 +79,7 @@ footer {
 @include media(900) {
 	.header {
 
-		img {
+		svg {
 			width: 12%;
 		}
 
