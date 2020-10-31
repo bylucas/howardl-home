@@ -32,11 +32,11 @@ $font-color: $dark-gray;
 $link-color: #99db2e;//green
 $hover-color: lighten($link-color, 35%);
 $nav-color: $link-color;
-$post-color: #3C6F29;
+$post-color: $link-color;// #3C6F29;
 
 // Background Colors
 $background: $post-color;//#161EAD
-$light-background: lighten($background, 55%);
+$light-background: lighten($background, 45%);
 
 // Form Colors
 $input-background: #fdfdfd;
