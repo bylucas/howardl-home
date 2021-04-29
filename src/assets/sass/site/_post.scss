@@ -2,6 +2,7 @@
   h2 {
     font-size: 1.6rem;
     text-align: center;
+    margin-top: $spacer;
   }
 
   h3 {
@@ -23,53 +24,19 @@
   }
 
   blockquote {
-    padding-left: $spacer/3;
-    border-left: 4px solid $post-color;
-    @include margin($spacer null);
+    padding-left: $spacer/2;
+    border-left: 8px solid $link-color;
+    @include margin($spacer/2 null $spacer*1.2 null);
 
     p {
-      font-size: $lead;
+      font-size: 1.2rem;
       font-style: italic;
       color: $post-color;
     }
   }
 
-  code {
-    //margin-left: 10px;
-    background: $light-background;
-    color: $background;
-    padding: 6px;
-    border-radius: $radius;
-    border: 1px solid tint($background,40%);
-    font-size: $third/1.08;
-  }
-
-  pre {
-    background: $light-background;
-    border-radius: $radius;
-    border: 2px solid tint($background,40%);
-    padding: 8px;
-  }
-
-  pre code {
-    background: none;
-    border-radius: 0;
-    border: none;
-    padding: 0;
-  }
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  text-align: center;
-
-  a {
-    display: block;
-    font-size: $secondary;
-    color: $post-color;
+  .bottom-post {
+    margin-top: $spacer;
   }
 }
 
@@ -94,13 +61,6 @@
   // align-items: flex-start;
   // }
 
-  code {
-    padding: 8px;
-  }
-
-  pre {
-    padding: 10px;
-  }
 }
 }
 
@@ -121,13 +81,7 @@
   //   margin-bottom: 5px;
    //}
 
-   code {
-    padding: 8px 10px;
-  }
-
-  pre {
-    padding: 10px 12px;
-  }
+   
 }
 }
 

@@ -4,46 +4,62 @@
 
 .wrapper,
 main,
-header,
+.header-home,
 article,
 footer {
     @include clearfix;
 }
 
-.header {
-	text-align: center;
-	@include padding($spacer null);
+//Post pages
+// .outer-header {
+// 	background-color: rgb(247, 223, 49);
+// }
+.loaded {
+	height: 200px;
+	width: 100%;
+}
+
+.cam-viewport {
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center center;
 	max-width: 900px;
 	margin: 0 auto;
+}
 
-	svg {
-		width: 20%;
-		margin-top: 12px;
-		fill: $post-color;
+.title {
+	color: #fff;
+	font-size: 2.3rem;
+	text-align: center;
+	line-height: 1.2;
+}
 
-		&:hover {
-			fill: $post-color;
-		}
-	}
-	h1 {
-		font-size: 1.5rem;
-		margin-top: 12px;
+@include media(700) {
+	.title {
+		font-size: 2.8rem;
 	}
 }
 
+@include media(900) {
+	.title {
+		font-size: 3.1rem;
+	}
+}
+
+
 main {
-	max-width: 800px;
+	max-width: 900px;
 	margin: $spacer*1.5 auto $spacer*2 auto;
 		padding: 0 3%;
 
 		img {
-			width: 20%;
+			width: 15%;
 			margin-bottom: $spacer/3;
-		}
-
-		h1 {
-			font-size: 2rem;
-			margin-bottom: $spacer/2;
 		}
 
 		button {
@@ -64,30 +80,30 @@ footer {
 }
 
 @include media(700) {
-	.header {
+	.header-home {
 
 		svg {
 			width: 15%;
 		}
 
 		h1 {
-			font-size: 1.9rem;
+			//font-size: 1.9rem;
 		}
 	}
 }
 
 @include media(900) {
-	.header {
+	.header-home {
 
 		svg {
 			width: 12%;
 		}
 
 		h1 {
-			font-size: 2.2rem;
+			//font-size: 2.2rem;
 		}
 	}
-
+	
 	main {
 		padding: 0;
 	}

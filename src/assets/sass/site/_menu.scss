@@ -26,16 +26,14 @@ nav {
       font-size: .9rem;
       letter-spacing: 2px;
       display: inline-block;
-      @include padding(19px 10px);
+      @include padding(20px 10px);
 
       a {
         color: $white;
-        transition: border 0.1s ease-in 0.1s;
         
 
         &:hover {
           color: $nav-color;
-border-bottom: 6px solid $nav-color;
 padding-bottom: 16px;
         }
       }    
@@ -55,10 +53,41 @@ padding-bottom: 16px;
   }
   .router-link-active {
     color:$nav-color !important;
-    border-bottom: 6px solid $nav-color;
     padding-bottom: 16px;
     transition: none;
   }
+}
+
+//links-wrap
+
+.menu-title {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.links-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: $spacer;
+}
+
+.links-left,
+.links-right {
+  text-align: center;
+
+  a {
+    color: $medium-gray;
+
+    &:hover {
+      color: $nav-color;
+    }
+  }
+}
+
+
+.links-wrap .router-link-active {
+color: $nav-color;
 }
 
 @include media(600) {
@@ -71,5 +100,16 @@ padding-bottom: 16px;
   nav .internal {
     font-size: 1.1rem;
     @include padding(19px 13px);
+  }
+
+  .links-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    //align-items: center;
+  }
+
+  .links-left,
+  .links-right {
+    width: 50%;
   }
 }

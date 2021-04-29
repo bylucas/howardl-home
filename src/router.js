@@ -6,16 +6,25 @@ import Scss from './views/Scss.vue';
 import Terminal from './views/Terminal.vue';
 import Wordpress from './views/Wordpress.vue';
 
+import Variables from './views/javascript/Variables.vue';
+import Functions from './views/javascript/Functions.vue';
+
 const history = createWebHistory();
 
 const routes = [
     {
       path: '/',
+      //name: 'Home',
       component: Home
     },
     {
       path: '/javascript',
-      component: Javascript
+      //name: 'Javascript',
+      component: Javascript,
+      children: [
+        { path: '/variables', component: Variables },
+        { path: '/functions', component: Functions },
+      ]
     },
   {
     path: '/php',

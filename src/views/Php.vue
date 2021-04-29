@@ -1,4 +1,5 @@
 <template>
+  <div class="outer-header">
   <lazyBackground
   :image-source="backgroundImage"
   loading-image="/loading2.gif"
@@ -6,10 +7,11 @@
   image-class="cam-viewport"
   background-size=""
   :title="title"  />
+  </div>
   <main>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, cumque. Totam molestiae incidunt velit repellat natus adipisci libero sapiente recusandae, dolorum necessitatibus maiores quo doloribus fugiat nihil sunt deserunt et!</p>
 
-<pre><code class="language-php">?php 
+<pre><code class="lang-php">?php 
 //SEO
 $post_title = 'More Php';
 $url = "more-php.php";
@@ -64,13 +66,22 @@ import lazyBackground from '../components/lazyBackground.vue'
 export default {
   data() {
     return {
-      backgroundImage: 'https://howardl.co.uk/ploads/india/delhi-header.jpg',
+      backgroundImage: '/post-image.jpg',
       title: 'This is the Php page'
     }
   },
   components: {
     lazyBackground
+  },
+  mounted() {
+    Prism.highlightAll()
   }
  
-}
+};
 </script>
+
+<style scoped>
+  .outer-header {
+    background-color: #FEAE8B;
+  }
+</style>

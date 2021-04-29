@@ -2,12 +2,14 @@
 // Variables
 // =======================
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,500;1,300;1,500&family=Roboto+Condensed:ital@0;1&display=swap');
+
 // TYPOGRAPHY ============================
-$font: "Raleway", sans-serif;
-$heading-font: $font;
-$alt-font: "Ubuntu Condensed", sans-serif;
-$code-font: "Source Code Pro", monospace;
-$icon-font: "";
+$font: 'Barlow Semi Condensed', sans-serif;
+$heading-font: 'Roboto Condensed', sans-serif;
+$alt-font: $heading-font;
+$code-font: $font-stack-monaco;
+$icon-font: '';
 
 $font-size: 1.2rem;
 
@@ -32,7 +34,7 @@ $font-color: $dark-gray;
 $link-color: #99db2e;//green
 $hover-color: lighten($link-color, 35%);
 $nav-color: $link-color;
-$post-color: $link-color;// #3C6F29;
+$post-color: rgb(117, 112, 112);
 
 // Background Colors
 $background: $post-color;//#161EAD

@@ -1,33 +1,28 @@
 <template>
-<lazyBackground
-  :image-source="backgroundImage"
-  loading-image="/loading2.gif"
-  error-image="/error.jpg"
-  image-class="cam-viewport"
-  background-size=""
-  :title="title" />
+<HeaderHome />
   <main>
 
-  <section class="post-content">
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, cumque. Totam molestiae incidunt velit repellat natus adipisci libero sapiente recusandae, dolorum necessitatibus maiores quo doloribus fugiat nihil sunt deserunt et!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus labore nisi, nobis nesciunt sed ratione error qui provident impedit illo eligendi voluptatibus accusamus hic culpa dolor, rerum, corporis nihil repellat!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit libero optio ullam sequi neque illum accusamus, distinctio aliquid inventore eius repudiandae omnis iusto corrupti molestias nihil, ut ducimus veniam.</p>
+  <section class="home-content">
+  <div class="home-card">
+		<div>
+			<img src="/javascript-small.png" alt="Modern Javascript">
+		</div>
+		<div>
+			<h2><router-link to="/javascript">Modern Javascript</router-link></h2>
+			<p>A personal reference library for javascript. A quick reference guide, easily accessed on-line.</p>
+		</div>
+	</div>
+	<h3 style="text-align: center;">Under Construction</h3>
   </section>
 </main>
 
 </template>
 <script>
-import lazyBackground from '../components/lazyBackground.vue'
+import HeaderHome from '../components/HeaderHome.vue'
 export default {
-  data() {
-    return {
-      backgroundImage: 'https://howardl.co.uk/uploads/code-reference/js-notes.jpg',
-      title: 'This is the home page'
-    }
-  },
   
   components: {
-    lazyBackground
+    HeaderHome
   }
  
 }

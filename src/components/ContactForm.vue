@@ -12,7 +12,7 @@
 
             </div>
             <button v-on:click="submitForm" type="button">Send</button>
-            <p>Or if you prefer you can contact me via the <em>regular email route</em> at <a href="mailto:h@bylucas.co.uk?Subject=Enquiry%20from%20the%20bylucas-website">h@bylucas.co.uk</a></p>
+            <p class="third">Or if you prefer you can contact me via the <em>regular email route</em> at <a href="mailto:h@bylucas.co.uk?Subject=Enquiry%20from%20the%20bylucas-website">h@bylucas.co.uk</a></p>
 
         </section>
 </template>

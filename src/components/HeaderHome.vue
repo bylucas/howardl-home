@@ -1,6 +1,5 @@
 <template>
-<div class="outer-header">
-<header class="header">
+<header class="header-home">
 
   <svg width="100%" height="100%" viewBox="0 0 612 621" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(0.999989,0.00463188,0.00463188,-0.999989,303.269,605.184)">
@@ -57,18 +56,12 @@
 </svg>
 
   
-  <h2>{{ msg }}</h2>
+  <h1>Code Quick Reference Notes</h1>
   </header>
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  data() {
-    return {
-      msg: 'Code Quick Reference Notes'
-    }
-  }
+  name: 'HeaderHome',
 }
 </script>

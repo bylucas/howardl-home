@@ -22,7 +22,7 @@ import { useRouter } from "vue-router";
 export default {
   setup() {
     const routes = [
-      { to: "/", text: "howardl.." },
+      { to: "/", text: "bylucas" },
       { to: "/javascript", text: "JavaScript" },
       { to: "/php", text: "Php" },
       { to: "/scss", text: "Scss" },

@@ -1,11 +1,13 @@
 <template>
+  <div class="outer-header">
   <lazyBackground
   :image-source="backgroundImage"
-  loading-image="/img/loading2.gif"
-  error-image="/img/error.jpg"
+  loading-image="/loading2.gif"
+  error-image="/error.jpg"
   image-class="cam-viewport"
   background-size=""
   :title="title"  />
+</div>
   <main>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, cumque. Totam molestiae incidunt velit repellat natus adipisci libero sapiente recusandae, dolorum necessitatibus maiores quo doloribus fugiat nihil sunt deserunt et!</p>
 
@@ -17,13 +19,19 @@ import lazyBackground from '../components/lazyBackground.vue'
 export default {
   data() {
     return {
-      backgroundImage: '/loading2.gif',
-      title: 'This is the Termonal page'
+      backgroundImage: '/post-image.jpg',
+      title: 'This is the Terminal page'
     }
   },
   components: {
     lazyBackground
   }
  
-}
+};
 </script>
+
+<style scoped>
+  .outer-header {
+    background-color: red;
+  }
+</style>

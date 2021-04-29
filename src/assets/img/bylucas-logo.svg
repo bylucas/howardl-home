@@ -1,8 +1,4 @@
-<template>
-<div class="outer-header">
-<header class="header">
-
-  <svg width="100%" height="100%" viewBox="0 0 612 621" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="100%" viewBox="0 0 612 621" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(0.999989,0.00463188,0.00463188,-0.999989,303.269,605.184)">
         <path d="M1.365,-0.003C-160.029,-0.004 -290.865,131.937 -290.864,294.693C-290.864,457.45 -160.03,589.391 1.365,589.39C162.76,589.391 293.596,457.45 293.596,294.694C293.597,131.937 162.761,-0.004 1.365,-0.003" style="fill-rule:nonzero;"/>
     </g>
@@ -55,20 +51,3 @@
         <path d="M175.716,177.748C177.991,179.025 180.915,181.022 182.645,185.014C184.376,189.007 187.57,199.844 185.826,201.188C184.082,202.532 181.652,203.856 180.159,199.153C178.666,194.451 178.42,191.893 177.989,188.611C177.558,185.329 175.247,185.008 174.201,182.464C173.155,179.92 173.44,176.47 175.716,177.748Z" style="fill:white;"/>
     </g>
 </svg>
-
-  
-  <h2>{{ msg }}</h2>
-  </header>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'Header',
-  data() {
-    return {
-      msg: 'Code Quick Reference Notes'
-    }
-  }
-}
-</script>
